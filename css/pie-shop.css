@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("/images/pattern.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+header,
+nav,
+footer {
+  background-color: #a593c2;
+  color: white;
+}
+header {
+  padding: 1rem;
+  text-align: center;
+}
+header h1 {
+  font-size: 1.5rem;
+}
+nav {
+  padding: 0.5rem;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+main {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.content-section,
+.sidebar {
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.logo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+}
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #a593c2;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+.button:hover {
+  background-color: #a593c2;
+}
+footer {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #a593c2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form input[type="submit"]:hover {
+  background-color: #333;
+}

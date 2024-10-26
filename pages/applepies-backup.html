@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to Bethany's Pie Shop!</title>
+    <meta name="author" content="Bethany's Pie Shop" />
+    <meta name="description" content="Store front for Bethany's Pie Shop" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" type="text/css" href="../css/pie-shop.css" />
+    <link rel="stylesheet" type="text/css" href="../css/grid.css" />
+  </head>
+
+  <body>
+    <header id="mainheader">
+      <img src="../images/cake.svg" height="55" alt="Bethany's Pie Shop Logo" />
+      <h1>Bethany's Pie Shop</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#">All pies</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+        <li><a href="/pages/calc.html">Calc</a></li>
+        <li><a href="/pages/about.html">About</a></li>
+      </ul>
+    </nav>
+    <main>
+      <aside class="sidebar">
+        <img
+          src="../images/bethanylogo.png"
+          alt="Bethany's Logo"
+          class="logo"
+        />
+        <h4>Browse our pies</h4>
+        <!--input type="search" class="searchbox" placeholder="Search our store" /-->
+        <select id="categoryFilter">
+          <option value="all">All pies</option>
+          <option value="cheesecake">Cheese cakes</option>
+          <option value="applepie">Apple pies</option>
+          <option value="otropie">Otro pies</option>
+        </select>
+      </aside>
+      <div class="content-section">
+        <div class="pieRow" data-category="cheesecake">
+          <img
+            src="../images/products/cheesecakesmall.jpg"
+            width="100"
+            height="63"
+          />
+          <div>
+            <h5>Cheese cake</h5>
+            <p>Plain cheese cake. Plain pleasure.</p>
+          </div>
+          <small>$12.95</small>
+        </div>
+
+        <div class="pieRow" data-category="applepie">
+          <img
+            src="../images/products/applepiesmall.jpg"
+            width="100"
+            height="63"
+          />
+          <div>
+            <h5>Apple pie</h5>
+            <p>Our famous apple pie</p>
+          </div>
+          <small>$14.95</small>
+        </div>
+
+        <div class="pieRow" data-category="applepie">
+          <img
+            src="../images/products/cranberrypiesmall.jpg"
+            width="100"
+            height="63"
+          />
+          <div>
+            <h5>Cranberry pie</h5>
+            <p>A Christmas favorite</p>
+          </div>
+          <small>$18.95</small>
+        </div>
+
+        <div class="pieRow" data-category="applepie">
+          <img
+            src="../images/products/cherrypiesmall.jpg"
+            width="100"
+            height="63"
+          />
+          <div>
+            <h5>Cherry pie</h5>
+            <p>A summer classic!</p>
+          </div>
+          <small>$18.95</small>
+        </div>
+
+        <div class="pieRow" data-category="otropie">
+          <img
+            src="../images/products/peachpiesmall.jpg"
+            width="100"
+            height="63"
+          />
+          <div>
+            <h5>Peach pie</h5>
+            <p>Sweet as peach</p>
+          </div>
+          <small>$18.95</small>
+        </div>
+
+        <div class="pieRow" data-category="otropie">
+          <img
+            src="../images/products/pumpkinpiesmall.jpg"
+            width="100"
+            height="63"
+          />
+          <div>
+            <h5>Pumpkin pie</h5>
+            <p>Our Halloween favorite</p>
+          </div>
+          <small>$18.95</small>
+        </div>
+
+        <div class="pieRow" data-category="otropie">
+          <img
+            src="../images/products/christmasapplepiesmall.jpg"
+            width="100"
+            height="63"
+          />
+          <div>
+            <h5>Christmas apple pie</h5>
+            <p>Happy holidays with this pie!</p>
+          </div>
+          <small>$19.95</small>
+        </div>
+
+        <div class="pieRow" data-category="cheesecake">
+          <img
+            src="../images/products/blueberrycheesecakesmall.jpg"
+            width="100"
+            height="63"
+          />
+          <div>
+            <h5>Blueberry cheese cake</h5>
+            <p>You'll love it!</p>
+          </div>
+          <small>$17.95</small>
+        </div>
+
+        <div class="pieRow" data-category="cheesecake">
+          <img
+            src="../images/products/rhubarbpiesmall.jpg"
+            width="100"
+            height="63"
+            class="pie-img"
+          />
+          <div>
+            <h5 class="pie-title">Rhubarb Pie</h5>
+            <p class="pie-description">My God, so sweet!</p>
+          </div>
+          <small class="pie-price">$21.95</small>
+        </div>
+
+        <div class="pieRow" data-category="cheesecake">
+          <img
+            src="../images/products/strawberrypiesmall.jpg"
+            width="100"
+            height="63"
+            class="pie-img"
+          />
+          <div>
+            <h5 class="pie-title">Strawberry Pie</h5>
+            <p class="pie-description">Our delicious strawberry pie!</p>
+          </div>
+          <small class="pie-price">$18.95</small>
+        </div>
+
+        <div class="pieRow" data-category="cheesecake">
+          <img
+            src="../images/products/strawberrycheesecakesmall.jpg"
+            width="100"
+            height="63"
+            class="pie-img"
+          />
+          <div>
+            <h5 class="pie-title">Strawberry Cheese Cake</h5>
+            <p class="pie-description">
+              One of the best cheese cakes you'll ever find!
+            </p>
+          </div>
+          <small class="pie-price">$18.95</small>
+        </div>
+      </div>
+
+      <div id="pieModal" class="modal">
+        <div class="modal-content">
+          <span id="closeModal" class="close">&times;</span>
+          <h5 id="modalTitle"></h5>
+          <img id="modalImage" src="" />
+          <p id="modalDescription"></p>
+          <small id="modalPrice"></small>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Our address is</p>
+      <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
+      <p><small>&copy; 2020 Bethany's Pie Shop - All rights reserved</small></p>
+    </footer>
+    <script src="/js/clasificarpies.js"></script>
+    <script src="/js/modal.js"></script>
+  </body>
+</html>
